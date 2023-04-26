@@ -1,15 +1,23 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { lazy, Suspense } from "react";
+import { Routes, Route } from "react-router-dom";
+import NotFoundPage from "./pages/NotFoundPage";
+import Layout from "./components/Layout";
 import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0);
+const HomePage = lazy(() => import("./pages/HomePage"));
+// const AboutPage = lazy(() => import("./pages/AboutPage"));
+// const CasesPage = lazy(() => import("./pages/CasesPage"));
 
+function App() {
   return (
     <>
-      <div></div>
-      <h1>Vite + React</h1>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+          {/* <Route path="*" element={<NotFoundPage />} /> */}
+        </Route>
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
     </>
   );
 }
