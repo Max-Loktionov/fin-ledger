@@ -12,9 +12,11 @@
   "dependencies": {
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
+    "react-bootstrap-icons": "^1.10.3",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0",
-    "styled-components": "^5.3.10"
+    "styled-components": "^5.3.10",
+    "vite-plugin-svgr": "^2.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

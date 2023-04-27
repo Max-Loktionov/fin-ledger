@@ -1,11 +1,30 @@
-import { SiteFooter, FooterList, FooterIcon } from "./Footer.styled";
-import fb from "../../assets/facebook.svg";
+import { SiteFooter, FooterList, FooterItem, FooterLink } from "./Footer.styled";
+import { FacebookIcon, TwitterIcon, LinkedinIcon, YoutubeIcon } from "./Footer.styled";
 
 export default function Footer() {
   return (
     <SiteFooter>
       <FooterList>
-        <FooterIcon src={fb} />
+        <FooterItem>
+          <FooterLink>
+            <FacebookIcon />
+          </FooterLink>
+        </FooterItem>
+        <FooterItem>
+          <FooterLink>
+            <TwitterIcon />
+          </FooterLink>
+        </FooterItem>
+        <FooterItem>
+          <FooterLink>
+            <YoutubeIcon />
+          </FooterLink>
+        </FooterItem>
+        <FooterItem>
+          <FooterLink>
+            <LinkedinIcon />
+          </FooterLink>
+        </FooterItem>
       </FooterList>
       <p>Copyright © 2021 - FinanceLedger</p>
     </SiteFooter>
