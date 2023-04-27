@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const TeamBox = styled("div")`
   padding: 72px 20px 48px;
-  color: #333333;
+  color: var(--dark);
 `;
 
 export const TeamList = styled("ul")`

@@ -30,9 +30,3 @@ export const SectionTitle = styled("h2")`
 export const SectionArticle = styled("article")`
   margin-bottom: 24px;
 `;
-// const AboutImg = styled.img.attrs({
-//   src: `${logo}`,
-// })`
-//   width: 50px;
-//   height: 30px;
-// `;
