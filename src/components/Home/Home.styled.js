@@ -1,19 +1,24 @@
 import styled from "styled-components";
 import home from "../../assets/images/home/showcase.jpg";
 import home2x from "../../assets/images/home/showcase@2x.jpg";
+import homeWebp from "../../assets/images/home/showcase.webp";
+import homeWebp2x from "../../assets/images/home/showcase@2x.webp";
 import { ButtonStyled } from "../Button/Button.styled";
 
 export const HomeWrapper = styled("div")`
   height: 533px;
   padding-top: 160px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${home});
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), image-set(url(${home}) 1x, url(${home2x}) 2x);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), image-set(url(${homeWebp}) 1x, url(${homeWebp2x}) 2x);
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  /* @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${home2x});
-  }
+  } */
   /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(.jpg); */
 `;
 

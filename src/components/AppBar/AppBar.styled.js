@@ -10,13 +10,13 @@ export const MenuList = styled.ul`
   justify-content: space-between;
   align-items: center;
 `;
-
+export const MenuItem = styled("li")`
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
+`;
 export const NAVLink = styled.a`
   text-decoration: none;
 
   font-weight: 400;
-
-  /* &:not(:last-child) {
-    padding-right: 12px;
-  } */
 `;

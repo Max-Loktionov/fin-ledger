@@ -5,16 +5,8 @@ export const SiteHeader = styled("header")`
   left: 50%;
   top: 0px;
   transform: translate(-50%, 0px);
-
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
-  /* width: 1200px; */
-  padding: 22px;
-  /* margin-bottom: 16px; */
-
-  background-color: transparent;
-  /* box-shadow: rgb(6 24 44 / 40%) -1px 2px 0px -1px, rgb(6 24 44 / 65%) 0px 1px 2px -1px, rgb(255 255 255 / 8%) 0px 1px 0px inset; */
+  padding: 22px 0 0;
+  /* background-color: transparent; */
 `;
 
 export const LogoWrapper = styled("div")`

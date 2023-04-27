@@ -1,24 +1,24 @@
-import { NAVLink, MenuList } from "./AppBar.styled";
+import { NAVLink, MenuList, MenuItem } from "./AppBar.styled";
 
 export default function AppBar() {
   return (
     <nav>
       <MenuList>
-        <li>
+        <MenuItem>
           <NAVLink>Home</NAVLink>
-        </li>
-        <li>
+        </MenuItem>
+        <MenuItem>
           <NAVLink>About</NAVLink>
-        </li>
-        <li>
+        </MenuItem>
+        <MenuItem>
           <NAVLink>Cases</NAVLink>
-        </li>
-        <li>
+        </MenuItem>
+        <MenuItem>
           <NAVLink>Blog</NAVLink>
-        </li>
-        <li>
+        </MenuItem>
+        <MenuItem>
           <NAVLink>Contact</NAVLink>
-        </li>
+        </MenuItem>
       </MenuList>
     </nav>
   );
