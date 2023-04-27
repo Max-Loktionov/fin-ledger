@@ -26,3 +26,35 @@ export const CallbackButton = styled(ButtonStyled)`
   padding-right: 56px;
   background-color: var(--brand-color);
 `;
+export const Form = styled.form`
+  margin-top: 40px;
+  margin-bottom: 40px;
+`;
+export const Input = styled.input`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  &:not(:last-of-type) {
+    margin-bottom: 2px;
+  }
+
+  padding: 11px 14px 12px;
+
+  width: 280px;
+  height: 40px;
+
+  /* background-color: 
+  border: 
+  border-color: 
+  border-radius: 40px; */
+`;
+export const ErrorText = styled.div`
+  margin-left: 16px;
+  &:not(:last-of-type) {
+    margin-bottom: 14px;
+  }
+  font-size: 10px;
+  color: red;
+
+  font-style: italic;
+`;
