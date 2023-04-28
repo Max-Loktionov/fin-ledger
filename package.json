@@ -15,9 +15,11 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.43.9",
+    "react-photo-view": "^1.2.3",
     "react-router-dom": "^6.10.0",
     "styled-components": "^5.3.10",
     "vite-plugin-svgr": "^2.4.0",
+    "yet-another-react-lightbox": "^3.5.3",
     "yup": "^1.1.1"
   },
   "devDependencies": {

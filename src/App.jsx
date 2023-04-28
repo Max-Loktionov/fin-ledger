@@ -2,9 +2,10 @@ import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import NotFoundPage from "./pages/NotFoundPage";
 import Layout from "./components/Layout";
+import HomePage from "./pages/HomePage";
 import "./App.css";
 
-const HomePage = lazy(() => import("./pages/HomePage"));
+// const HomePage = lazy(() => import("./pages/HomePage"));
 // const AboutPage = lazy(() => import("./pages/AboutPage"));
 // const CasesPage = lazy(() => import("./pages/CasesPage"));
 
