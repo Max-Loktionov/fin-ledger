@@ -4,7 +4,7 @@ import { FacebookIcon, TwitterIcon, LinkedinIcon, YoutubeIcon } from "./Footer.s
 export default function Footer() {
   return (
     <SiteFooter>
-      {/* <FooterList>
+      <FooterList>
         <FooterItem>
           <FooterLink>
             <FacebookIcon />
@@ -25,7 +25,7 @@ export default function Footer() {
             <LinkedinIcon />
           </FooterLink>
         </FooterItem>
-      </FooterList> */}
+      </FooterList>
       <p>Copyright © 2021 - FinanceLedger</p>
     </SiteFooter>
   );

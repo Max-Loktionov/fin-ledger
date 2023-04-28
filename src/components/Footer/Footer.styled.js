@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import { Facebook, Twitter, Youtube, Linkedin } from "react-bootstrap-icons";
+import { ReactComponent as Linkedin1 } from "../../assets/linkedin.svg";
+import { ReactComponent as Youtube1 } from "../../assets/youtube.svg";
+import { ReactComponent as Twitter1 } from "../../assets/twitter.svg";
+import { ReactComponent as Facebook1 } from "../../assets/facebook.svg";
 
-export const CasesBox = styled("div")`
-  padding: 56px 20px 40px;
-  color: #333333;
-`;
 export const SiteFooter = styled("footer")`
   padding: 20px;
   text-align: center;
@@ -13,7 +12,6 @@ export const SiteFooter = styled("footer")`
 export const FooterList = styled("ul")`
   display: flex;
   justify-content: center;
-  margin-top: 20px;
   margin-bottom: 12px;
 `;
 export const FooterItem = styled("li")`
@@ -35,7 +33,7 @@ export const FooterLink = styled("a")`
   background-color: var(--dark);
 `;
 
-export const FacebookIcon = styled(Facebook)`
+export const FacebookIcon = styled(Facebook1)`
   width: 35px;
   height: 35px;
   fill: var(--main);
@@ -45,7 +43,7 @@ export const FacebookIcon = styled(Facebook)`
     fill: var(--brand-color);
   }
 `;
-export const TwitterIcon = styled(Twitter)`
+export const TwitterIcon = styled(Twitter1)`
   width: 35px;
   height: 35px;
   fill: var(--main);
@@ -55,7 +53,7 @@ export const TwitterIcon = styled(Twitter)`
     fill: var(--brand-color);
   }
 `;
-export const YoutubeIcon = styled(Youtube)`
+export const YoutubeIcon = styled(Youtube1)`
   width: 35px;
   height: 35px;
   fill: var(--main);
@@ -65,7 +63,7 @@ export const YoutubeIcon = styled(Youtube)`
     fill: var(--brand-color);
   }
 `;
-export const LinkedinIcon = styled(Linkedin)`
+export const LinkedinIcon = styled(Linkedin1)`
   width: 35px;
   height: 35px;
   fill: var(--main);
