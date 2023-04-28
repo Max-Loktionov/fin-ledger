@@ -15,21 +15,31 @@ export const HomeWrapper = styled("div")`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media screen and (min-width: 768px) {
+    height: 1024px;
+    padding-top: 378px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    height: 768px;
+    padding-top: 272px;
+  }
 `;
 
-export const HeroText = styled("p")`
-  margin-bottom: 16px;
+export const HeroTitle = styled("p")`
+  margin: 0 20px 24px 20px;
+  text-align: center;
+  font-size: 26px;
+  line-height: 32px;
+`;
+
+export const HeroText = styled("h1")`
+  margin: 0 40px 16px 40px;
   font-weight: 600;
   font-size: 40px;
   line-height: 54px;
   text-align: center;
-`;
-
-export const HeroTitle = styled("h1")`
-  margin-bottom: 24px;
-  text-align: center;
-  font-size: 26px;
-  line-height: 32px;
 `;
 export const HeroButton = styled(ButtonStyled)`
   display: flex;

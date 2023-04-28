@@ -5,10 +5,7 @@ export default function Home() {
   return (
     <section>
       <HomeWrapper>
-        <HeroText>
-          The Sky Is <br />
-          The Limit
-        </HeroText>
+        <HeroText>The Sky Is The Limit</HeroText>
         <HeroTitle>We provide world class financial assistance</HeroTitle>
         <HeroButton>
           <AngleRight src={angleRight} /> Read More

@@ -5,7 +5,18 @@ import contactWebp from "../../assets/images/home/contact.webp";
 import contactWebp2x from "../../assets/images/home/contact@2x.webp";
 import { ButtonStyled } from "../Button/Button.styled";
 
-export const ContactImgWrapper = styled("div")`
+export const CallbackSection = styled("section")`
+  background-color: #f4f4f4;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1360px) {
+    margin-bottom: 0px;
+  }
+`;
+
+export const CallbackImgWrapper = styled("div")`
   height: 220px;
   width: 100%;
 
@@ -16,38 +27,95 @@ export const ContactImgWrapper = styled("div")`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media screen and (min-width: 768px) {
+    height: 354px;
+    max-width: 48%;
+    flex-basis: 100%;
+  }
+  @media screen and (min-width: 1360px) {
+    height: 454px;
+  }
 `;
 export const CallbackBox = styled("div")`
   padding: 51px 20px 25px;
   color: var(--dark);
+  @media screen and (min-width: 768px) {
+    flex-basis: 100%;
+    padding: 32px;
+  }
+  @media screen and (min-width: 1360px) {
+    padding: 56px 28px 76px 20px;
+  }
 `;
-export const CallbackButton = styled(ButtonStyled)`
-  padding-left: 56px;
-  padding-right: 56px;
-  background-color: var(--brand-color);
+
+export const FormWrapper = styled.div`
+  /* padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 51px; */
+
+  @media screen and (min-width: 1360px) {
+    /* margin-top: 56px; */
+  }
 `;
+
 export const Form = styled.form`
-  margin-top: 40px;
-  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  /* padding-bottom: 25px; */
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1360px) {
+    gap: 24px;
+  }
+`;
+export const Label = styled.label`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+  @media screen and (min-width: 1360px) {
+  }
+  /* &:not(:last-of-type) {
+    margin-bottom: 20px;
+  } */
+`;
+export const Placeholder = styled.span`
+  position: absolute;
+  top: 16px;
+  left: 8px;
+  color: #808080;
+  transition: 0.2s ease all;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1360px) {
+  }
 `;
 export const Input = styled.input`
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  &:not(:last-of-type) {
-    margin-bottom: 2px;
+  width: 100%;
+  height: 56px;
+  background: #ffffff;
+  border: 1px solid #f5f5f5;
+  border-radius: 5px;
+  outline: none;
+  padding: 16px 8px;
+  ::placeholder {
+    opacity: 0;
   }
-
-  padding: 11px 14px 12px;
-
-  width: 280px;
-  height: 40px;
-
-  /* background-color: 
-  border: 
-  border-color: 
-  border-radius: 40px; */
+  :focus-within ~ ${Placeholder}, :not(:placeholder-shown) ~ ${Placeholder} {
+    top: -20px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+  @media screen and (min-width: 1360px) {
+  }
 `;
+
 export const ErrorText = styled.div`
   margin-left: 16px;
   &:not(:last-of-type) {
@@ -57,4 +125,10 @@ export const ErrorText = styled.div`
   color: red;
 
   font-style: italic;
+`;
+export const CallbackButton = styled(ButtonStyled)`
+  padding-left: 56px;
+  padding-right: 56px;
+  width: 155px;
+  background-color: var(--brand-color);
 `;

@@ -14,6 +14,18 @@ export const MenuItem = styled("li")`
   &:not(:last-child) {
     margin-right: 12px;
   }
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1360px) {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
 `;
 export const NAVLink = styled.a`
   text-decoration: none;

@@ -3,6 +3,18 @@ import blog from "../../assets/images/home/blog.jpg";
 import blog2x from "../../assets/images/home/blog@2x.jpg";
 import blogWebp from "../../assets/images/home/blog.webp";
 import blogWebp2x from "../../assets/images/home/blog@2x.webp";
+import { SectionTitle } from "../About/About.styled";
+
+export const BlogSection = styled("section")`
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1360px) {
+    margin-bottom: 80px;
+  }
+`;
 
 export const BlogImgWrapper = styled("div")`
   height: 247px;
@@ -15,9 +27,29 @@ export const BlogImgWrapper = styled("div")`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media screen and (min-width: 768px) {
+    height: 493px;
+
+    flex-basis: 100%;
+  }
+  @media screen and (min-width: 1360px) {
+    height: 460px;
+  }
 `;
 
 export const BlogBox = styled("div")`
   padding: 48px 20px 56px;
   background-color: var(--secondary-brand-color);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: 100%;
+    padding: 60px 32px;
+  }
+  @media screen and (min-width: 1360px) {
+    padding: 80px 20px 80px 28px;
+  }
+`;
+export const BlogTitle = styled(SectionTitle)`
+  text-align: start;
 `;
