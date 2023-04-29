@@ -117,6 +117,8 @@ export const Input = styled.input`
 `;
 
 export const ErrorText = styled.div`
+  display: flex;
+  align-items: center;
   margin-left: 16px;
   &:not(:last-of-type) {
     margin-bottom: 14px;

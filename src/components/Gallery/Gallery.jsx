@@ -1,13 +1,9 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { cardSrc } from "./imageImport";
 import { slidesSet } from "./imageImport";
 import { GallaryList, CardImg } from "./Gallery.styled";
-import MyPrevIcon from "../../assets/images/gallery/prev.png";
-import MyNextIcon from "../../assets/images/gallery/next.png";
-import MyCloseIcon from "../../assets/images/gallery/close.png";
-
 import Lightbox from "yet-another-react-lightbox";
-// import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/styles.css";
 
 export default function Gallery() {
   const [open, setOpen] = useState(false);
@@ -16,33 +12,21 @@ export default function Gallery() {
   const handleOpenClick = (id) => {
     setCurrentItem(id);
     setOpen(true);
-    console.log("current", id);
   };
 
-  const ref = useRef(null);
   return (
     <>
       <Lightbox
         slides={slidesSet}
         index={currentItem}
-        labels={{ Next: "Next slide" }}
         open={open}
         close={() => setOpen(false)}
         styles={{
           container: { backgroundColor: "rgba(0, 0, 0, .7)", padding: "32px" },
-          button: { width: "40%", height: "40%", opacity: "0.3" },
           icon: { width: "72px", height: "72px" },
+          root: { "--yarl__color_button_disabled": "rgba(0, 0, 0, 0))" },
         }}
-        render={{
-          // iconPrev: () => <img src={MyPrevIcon} />,
-          // iconNext: () => <img src={MyNextIcon} />,
-          // iconClose: () => <img src={MyCloseIcon} />,
-          buttonPrev: currentItem === 0 ? () => null : undefined,
-          buttonNext: currentItem === slidesSet.length - 1 ? () => null : undefined,
-        }}
-        controller={{ ref }}
-        on={{ click: () => ref.previous.close() }}
-        carousel={{ finite: true, closeOnBackdropClick: false, touchAction: "pan-y" }}
+        carousel={{ finite: true, closeOnBackdropClick: true, touchAction: "pan-y" }}
       />
       <GallaryList>
         {cardSrc.slice(0, 6).map((card, idx) => {

@@ -1,10 +1,12 @@
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import { ReactComponent as WarningIcon } from "../../assets/images/form/worning.svg";
 
 import { SectionTitle } from "../About/About.styled";
 import { CallbackSection, CallbackImgWrapper, CallbackButton, CallbackBox } from "./Callback.styled";
 import { FormWrapper, Form, Input, ErrorText, Label, Placeholder } from "./Callback.styled";
+
 const schema = yup
   .object({
     name: yup.string().required(),
@@ -69,7 +71,14 @@ export default function Callback() {
               />
               <Placeholder>Enter email*</Placeholder>
             </Label>
-            <ErrorText>{errors?.email && <p>{errors?.email?.message}</p>}</ErrorText>
+            <ErrorText>
+              {errors?.email && (
+                <>
+                  <WarningIcon />
+                  <p>{errors?.email?.message}</p>
+                </>
+              )}
+            </ErrorText>
             <CallbackButton type="submit">Send</CallbackButton>
           </Form>
         </FormWrapper>
