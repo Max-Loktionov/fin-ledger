@@ -1,3 +1,5 @@
+@import "yet-another-react-lightbox/styles.css";
+
 :root {
   --brand-color: #28a745;
   --secondary-brand-color: #0284d0;
@@ -7,4 +9,8 @@
 
 * {
   box-sizing: border-box;
+}
+
+.yarl__container {
+  background-color: green;
 }
