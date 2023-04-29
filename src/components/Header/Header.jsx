@@ -1,9 +1,21 @@
+import { useState, useEffect } from "react";
 import AppBar from "../AppBar";
-import openBook from "../../assets/fa-solid_book-open.svg";
 import { SiteHeader, Logo, LogoTitle, LogoWrapper, Text, HeaderWrapper } from "./Header.styled";
+
 export default function Header() {
+  const [scroll, setScroll] = useState(0);
+
+  const handleScroll = () => {
+    setScroll(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <SiteHeader>
+    <SiteHeader scroll={scroll}>
       <HeaderWrapper>
         <LogoWrapper>
           <Logo />

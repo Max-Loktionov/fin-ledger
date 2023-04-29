@@ -5,19 +5,29 @@ export default function AppBar() {
     <nav>
       <MenuList>
         <MenuItem>
-          <NAVLink>Home</NAVLink>
+          <NAVLink to="home" activeClass="active" spy={true} smooth={true} offset={-70} duration={500}>
+            Home
+          </NAVLink>
         </MenuItem>
         <MenuItem>
-          <NAVLink>About</NAVLink>
+          <NAVLink to="about" activeClass="active" spy={true} smooth={true} offset={-70} duration={500}>
+            About
+          </NAVLink>
         </MenuItem>
         <MenuItem>
-          <NAVLink>Cases</NAVLink>
+          <NAVLink to="cases" activeClass="active" spy={true} smooth={true} offset={-70} duration={500}>
+            Cases
+          </NAVLink>
         </MenuItem>
         <MenuItem>
-          <NAVLink>Blog</NAVLink>
+          <NAVLink to="blog" activeClass="active" spy={true} smooth={true} offset={-70} duration={500}>
+            Blog
+          </NAVLink>
         </MenuItem>
         <MenuItem>
-          <NAVLink>Contact</NAVLink>
+          <NAVLink to="contact" activeClass="active" spy={true} smooth={true} offset={-70} duration={500}>
+            Contact
+          </NAVLink>
         </MenuItem>
       </MenuList>
     </nav>

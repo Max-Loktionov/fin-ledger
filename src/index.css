@@ -1,5 +1,4 @@
 @import-normalize;
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
 body {
   margin: 0;
@@ -42,4 +41,22 @@ li {
 
 section {
   box-sizing: border-box;
+}
+
+.yarl__root {
+  --yarl__color_backdrop: rgba(0, 0, 0, 0.7);
+  --yarl__color_button_disabled: rgba(0, 0, 0, 0.1);
+  --yarl__navigation_button_padding: 120px 56px;
+  --yarl__carousel_padding_px: 24;
+}
+
+.yarl__button {
+  color: rgba(256, 256, 256, 0.4);
+  &[Close] {
+    background-color: rgba(256, 0, 0, 0.4);
+  }
+}
+.yarl__icon {
+  width: 64px;
+  height: 64px;
 }

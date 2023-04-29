@@ -22,8 +22,8 @@ export default function Gallery() {
         open={open}
         close={() => setOpen(false)}
         styles={{
-          container: { backgroundColor: "rgba(0, 0, 0, .7)", padding: "32px" },
-          icon: { width: "72px", height: "72px" },
+          // container: { backgroundColor: "rgba(0, 0, 0, .7)", padding: "32px" },
+          // icon: { width: "72px", height: "72px" },
           root: { "--yarl__color_button_disabled": "rgba(0, 0, 0, 0))" },
         }}
         carousel={{ finite: true, closeOnBackdropClick: true, touchAction: "pan-y" }}

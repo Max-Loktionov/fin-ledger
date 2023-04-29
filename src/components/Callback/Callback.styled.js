@@ -133,4 +133,10 @@ export const CallbackButton = styled(ButtonStyled)`
   padding-right: 56px;
   width: 155px;
   background-color: var(--brand-color);
+
+  &:hover,
+  &:focus {
+    background-color: #2ebf4f;
+    color: var(--main);
+  }
 `;

@@ -48,6 +48,12 @@ export const HeroButton = styled(ButtonStyled)`
   margin-right: auto;
   border-color: var(--brand-color);
   background-color: var(--brand-color);
+
+  &:hover,
+  &:focus {
+    background-color: #2ebf4f;
+    color: var(--main);
+  }
 `;
 export const AngleRight = styled("img")`
   display: inline-block;

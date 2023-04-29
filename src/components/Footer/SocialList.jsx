@@ -1,7 +1,7 @@
 import { SiteFooter, FooterList, FooterItem, FooterLink } from "./Footer.styled";
 import { FacebookIcon, TwitterIcon, LinkedinIcon, YoutubeIcon } from "./Footer.styled";
 
-export default function Footer() {
+export default function SocialList() {
   return (
     <SiteFooter>
       <FooterList>

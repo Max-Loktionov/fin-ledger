@@ -6,7 +6,7 @@ export default function About() {
     <>
       <AboutSection>
         <AboutImgWrapper />
-        <AboutBox>
+        <AboutBox id="about">
           <SubTitle>What you are looking for</SubTitle>
           <Abouttitle>We provide bespoke solutions</Abouttitle>
           <SectionArticle>

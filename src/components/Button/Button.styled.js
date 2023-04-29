@@ -12,10 +12,12 @@ export const ButtonStyled = styled.button`
   font-size: 18px;
   line-height: 1.4;
   cursor: pointer;
-  box-shadow: var(--brand-color);
+  border: var(--main) 1px solid;
 
+  transition: background-color 0.3s ease-out, color 0.3s ease-out;
   &:hover {
     color: var(--brand-color);
+
     background-color: var(--main);
   }
 `;

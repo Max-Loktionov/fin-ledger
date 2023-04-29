@@ -30,7 +30,6 @@ export const FooterLink = styled("a")`
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: var(--dark);
 `;
 
 export const FacebookIcon = styled(Facebook1)`
@@ -38,6 +37,7 @@ export const FacebookIcon = styled(Facebook1)`
   height: 35px;
   fill: var(--main);
 
+  transition: fill 0.3s ease-out;
   &:hover,
   &:focus {
     fill: var(--brand-color);
@@ -48,6 +48,7 @@ export const TwitterIcon = styled(Twitter1)`
   height: 35px;
   fill: var(--main);
 
+  transition: fill 0.3s ease-out;
   &:hover,
   &:focus {
     fill: var(--brand-color);
@@ -58,6 +59,7 @@ export const YoutubeIcon = styled(Youtube1)`
   height: 35px;
   fill: var(--main);
 
+  transition: fill 0.3s ease-out;
   &:hover,
   &:focus {
     fill: var(--brand-color);
@@ -68,6 +70,7 @@ export const LinkedinIcon = styled(Linkedin1)`
   height: 35px;
   fill: var(--main);
 
+  transition: fill 0.3s ease-out;
   &:hover,
   &:focus {
     fill: var(--brand-color);

@@ -4,6 +4,7 @@ import blog2x from "../../assets/images/home/blog@2x.jpg";
 import blogWebp from "../../assets/images/home/blog.webp";
 import blogWebp2x from "../../assets/images/home/blog@2x.webp";
 import { SectionTitle } from "../About/About.styled";
+import { ButtonStyled } from "../Button/Button.styled";
 
 export const BlogSection = styled("section")`
   @media screen and (min-width: 768px) {
@@ -52,4 +53,10 @@ export const BlogBox = styled("div")`
 `;
 export const BlogTitle = styled(SectionTitle)`
   text-align: start;
+`;
+export const BlogButton = styled(ButtonStyled)`
+  &:hover {
+    color: #0284d0;
+    border: 1px solid #0284d0;
+  }
 `;

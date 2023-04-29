@@ -2,7 +2,6 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { ReactComponent as WarningIcon } from "../../assets/images/form/worning.svg";
-
 import { SectionTitle } from "../About/About.styled";
 import { CallbackSection, CallbackImgWrapper, CallbackButton, CallbackBox } from "./Callback.styled";
 import { FormWrapper, Form, Input, ErrorText, Label, Placeholder } from "./Callback.styled";
@@ -10,7 +9,7 @@ import { FormWrapper, Form, Input, ErrorText, Label, Placeholder } from "./Callb
 const schema = yup
   .object({
     name: yup.string().required(),
-    email: yup.string().required(),
+    email: yup.string().email().required(),
   })
   .required();
 
@@ -24,18 +23,24 @@ export default function Callback() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
   });
-  const onSubmit = (data) => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...data }),
-    })
-      .then(() => alert("Success!"))
-      .catch((error) => alert(error));
+
+  const onSubmit = async (data) => {
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", ...data }),
+      });
+      alert("Success!");
+      reset();
+    } catch (error) {
+      (error) => alert(error);
+    }
   };
 
   return (
@@ -64,7 +69,6 @@ export default function Callback() {
                 label="Email"
                 {...register("email", {
                   required: "This is required",
-                  // pattern: { value: emailRegex, message: "Check your email" },
                 })}
                 type="email"
                 placeholder="Enter email*"
