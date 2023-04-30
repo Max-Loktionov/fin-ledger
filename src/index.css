@@ -43,6 +43,7 @@ section {
   box-sizing: border-box;
 }
 
+/* some styles for library Lightbox */
 .yarl__root {
   --yarl__color_backdrop: rgba(0, 0, 0, 0.7);
   --yarl__color_button_disabled: rgba(0, 0, 0, 0.1);

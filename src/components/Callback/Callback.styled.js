@@ -50,12 +50,9 @@ export const CallbackBox = styled("div")`
 `;
 
 export const FormWrapper = styled.div`
-  /* padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 51px; */
-
+  
   @media screen and (min-width: 1360px) {
-    /* margin-top: 56px; */
+    
   }
 `;
 
@@ -63,13 +60,11 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 16px;
-  /* padding-bottom: 25px; */
+ 
 
   @media screen and (min-width: 768px) {
   }
-  @media screen and (min-width: 1360px) {
-    gap: 24px;
-  }
+ 
 `;
 export const Label = styled.label`
   position: relative;
@@ -78,11 +73,7 @@ export const Label = styled.label`
   @media screen and (min-width: 768px) {
     font-size: 18px;
   }
-  @media screen and (min-width: 1360px) {
-  }
-  /* &:not(:last-of-type) {
-    margin-bottom: 20px;
-  } */
+ 
 `;
 export const Placeholder = styled.span`
   position: absolute;

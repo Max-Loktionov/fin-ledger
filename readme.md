@@ -7,9 +7,7 @@
 
 to visit LIVE netlify-page [Click here](https://stalwart-bombolone-1f2eb4.netlify.app/)
 
-![Netlify Status](https://api.netlify.com/api/v1/badges/eb4cff8d-d17a-4af9-9203-67887b8d8be8/deploy-status)]
-
-<!-- https://img.shields.io/netlify/eb4cff8d-d17a-4af9-9203-67887b8d8be8?color=green -->
+![Netlify Status](https://api.netlify.com/api/v1/badges/eb4cff8d-d17a-4af9-9203-67887b8d8be8/deploy-status)
 
 ---
 
@@ -17,7 +15,7 @@ to visit LIVE netlify-page [Click here](https://stalwart-bombolone-1f2eb4.netlif
 
 ## **_fin-ledger_**
 
-is a single-page site that will help you get piece of advice on most financial issues and introduce you to the team of real professionals
+is a single-page site that will help you get piece of advice on most financial issues and introduce you to the team of real professionals.
 
 ## <img alt="npm type definitions" src="https://img.shields.io/badge/dependencies-react-green">
 
