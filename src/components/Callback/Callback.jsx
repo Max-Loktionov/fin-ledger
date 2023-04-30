@@ -83,7 +83,9 @@ export default function Callback() {
                 </>
               )}
             </ErrorText>
-            <CallbackButton type="submit">Send</CallbackButton>
+            <CallbackButton type="submit" aria-label="button for submit contact form">
+              Send
+            </CallbackButton>
           </Form>
         </FormWrapper>
       </CallbackBox>

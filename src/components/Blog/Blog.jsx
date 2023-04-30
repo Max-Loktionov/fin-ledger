@@ -13,7 +13,7 @@ export default function Blog() {
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos quae laudantium asperiores nam aliquid
           impedit harum illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste maiores deleniti?
         </SectionArticle>
-        <BlogButton>Read Our Blog</BlogButton>
+        <BlogButton aria-label="button for read more blog">Read Our Blog</BlogButton>
       </BlogBox>
     </BlogSection>
   );
