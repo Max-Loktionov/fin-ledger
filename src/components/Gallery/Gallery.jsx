@@ -1,9 +1,9 @@
 import { useState } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 import { cardSrc } from "./imageImport";
 import { slidesSet } from "./imageImport";
 import { GallaryList, CardImg } from "./Gallery.styled";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
 
 export default function Gallery() {
   const [open, setOpen] = useState(false);
@@ -21,11 +21,6 @@ export default function Gallery() {
         index={currentItem}
         open={open}
         close={() => setOpen(false)}
-        styles={{
-          // container: { backgroundColor: "rgba(0, 0, 0, .7)", padding: "32px" },
-          // icon: { width: "72px", height: "72px" },
-          root: { "--yarl__color_button_disabled": "rgba(0, 0, 0, 0))" },
-        }}
         carousel={{ finite: true, closeOnBackdropClick: true, touchAction: "pan-y" }}
       />
       <GallaryList>

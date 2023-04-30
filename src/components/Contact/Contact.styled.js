@@ -19,15 +19,12 @@ export const TeamList = styled("ul")`
 export const TeamCardImg = styled("img")`
   width: 280px;
   display: block;
-
+  scale: 1;
   object-fit: cover;
   object-position: center;
-  transition-property: all;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.43, 0.21, 0, 1.03);
-  &:hover {
-    scale: 1.1;
-  }
+  overflow: hidden;
+  transition: scale 0.3s ease-out;
+
   @media screen and (min-width: 768px) {
     width: 223px;
   }
@@ -35,26 +32,6 @@ export const TeamCardImg = styled("img")`
     width: 420px;
   }
 `;
-export const CardImageWrapper = styled.div`
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-
-  ${TeamCardImg} {
-    &:hover {
-      scale: 1.1;
-    }
-  }
-`;
-export const CardTextWrapper = styled("div")`
-  text-align: center;
-  padding-top: 16px;
-`;
-export const CardTitle = styled("h3")`
-  margin-bottom: 8px;
-`;
-export const TeamItem = styled("li")``;
 
 export const CardImageOverlay = styled("div")`
   position: absolute;
@@ -62,38 +39,21 @@ export const CardImageOverlay = styled("div")`
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
+
   width: 280px;
   height: 186px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
   opacity: 0;
   z-index: 1;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-  transition-property: opacity;
-  transition-duration: 960ms;
-  transition-timing-function: cubic-bezier(0.43, 0.21, 0, 1.03);
+  transition-property: opacity, scale;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
 
-  :hover {
-    opacity: 1;
-
-    ${TeamCardImg} {
-      scale: 1.1;
-    }
-    box-shadow: (0px 4px 10px rgba(0, 0, 0, 0.25));
-  }
-  /* :hover ~ ${TeamCardImg} {
-    scale: 1.1;
-  } */
-  /* &:hover {
-    object-fit: cover;
-    visibility: visible;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  } */
-
-  /* &:hover > div {
-    opacity: 1;
-    visibility: visible;
-  } */
   @media screen and (min-width: 768px) {
     width: 223px;
     height: 148px;
@@ -103,35 +63,78 @@ export const CardImageOverlay = styled("div")`
     height: 287px;
   }
 `;
+export const CardImageWrapper = styled.div`
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  object-fit: contain;
+
+  transition: scale 0.3s ease-out, opacity 0.3s ease-out;
+
+  &:hover {
+    ${TeamCardImg} {
+      scale: 1.05;
+      box-shadow: (0px 4px 10px rgba(0, 0, 0, 0.25));
+    }
+    ${CardImageOverlay} {
+      opacity: 1;
+      scale: 1.05;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 223px;
+    height: 148px;
+  }
+  @media screen and (min-width: 1360px) {
+    width: 420px;
+    height: 287px;
+  }
+`;
+export const CardTextWrapper = styled("div")`
+  text-align: center;
+  padding-top: 16px;
+`;
+export const CardTitle = styled("h3")`
+  margin-bottom: 8px;
+`;
+export const TeamItem = styled("li")`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
 export const SocialList = styled(FooterList)`
   display: flex;
 `;
 
 export const FacebookIcon1 = styled(FacebookIcon)`
+  opacity: 1;
   &:hover {
-    fill: #ffffffcc;
-  }
-`;
-export const TwitterIcon1 = styled(TwitterIcon)`
-  &:hover {
+    opacity: 0.8;
     fill: #ffffffcc;
   }
 `;
 export const YoutubeIcon1 = styled(YoutubeIcon)`
-  width: 35px;
-  height: 35px;
-  fill: var(--main);
-
+  opacity: 1;
   &:hover {
     fill: #ffffffcc;
+    opacity: 0.8;
   }
 `;
-export const LinkedinIcon1 = styled(LinkedinIcon)`
-  width: 35px;
-  height: 35px;
-  fill: var(--main);
-
+export const TwitterIcon1 = styled(TwitterIcon)`
+  opacity: 1;
   &:hover {
     fill: #ffffffcc;
+    opacity: 0.8;
+  }
+`;
+
+export const LinkedinIcon1 = styled(LinkedinIcon)`
+  opacity: 1;
+  &:hover {
+    fill: #ffffffcc;
+    opacity: 0.8;
   }
 `;
