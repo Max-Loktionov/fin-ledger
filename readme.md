@@ -7,7 +7,7 @@
 
 to visit LIVE netlify-page [Click here](https://stalwart-bombolone-1f2eb4.netlify.app/)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/eb4cff8d-d17a-4af9-9203-67887b8d8be8/deploy-status)]
+![Netlify Status](https://api.netlify.com/api/v1/badges/eb4cff8d-d17a-4af9-9203-67887b8d8be8/deploy-status)]
 
 <!-- https://img.shields.io/netlify/eb4cff8d-d17a-4af9-9203-67887b8d8be8?color=green -->
 
@@ -15,7 +15,7 @@ to visit LIVE netlify-page [Click here](https://stalwart-bombolone-1f2eb4.netlif
 
 ## Description
 
-## **_fin-ledger_** -##
+## **_fin-ledger_**
 
 is a single-page site that will help you get piece of advice on most financial issues and introduce you to the team of real professionals
 
