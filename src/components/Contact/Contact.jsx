@@ -19,7 +19,7 @@ export default function Contact() {
                   <picture>
                     <source srcSet={`${card._1x_webp} 1x, ${card._2x_webp} 2x`} type="image/webp" loading="lazy" />
                     <source srcSet={`${card._1x} 1x, ${card._2x} 2x`} type="image/jpeg" loading="lazy" />
-                    <TeamCardImg src={card._1x} alt={card.alt} />
+                    <TeamCardImg src={card._1x} alt={card.alt} loading="lazy" width="420" height="287" />
                   </picture>
                   <CardImageOverlay>
                     <SocialList>

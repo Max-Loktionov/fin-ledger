@@ -13,7 +13,7 @@ export default function About() {
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos quae laudantium asperiores nam aliquid
             impedit harum illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste maiores deleniti?
           </SectionArticle>
-          <Button aria-label="button read more about">Read More</Button>
+          <Button>Read More</Button>
         </AboutBox>
       </AboutSection>
     </>

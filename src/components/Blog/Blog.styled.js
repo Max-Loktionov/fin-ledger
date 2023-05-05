@@ -7,6 +7,7 @@ import { SectionTitle } from "../About/About.styled";
 import { ButtonStyled } from "../Button/Button.styled";
 
 export const BlogSection = styled("section")`
+  margin-bottom: 72px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row-reverse;

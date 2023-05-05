@@ -22,12 +22,17 @@ export const SectionArticle = styled("article")`
 
 export const AboutSection = styled("section")`
   margin-bottom: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 420px;
   @media screen and (min-width: 768px) {
     display: flex;
     margin-bottom: 48px;
+    max-width: 768px;
   }
   @media screen and (min-width: 1360px) {
     margin-bottom: 80px;
+    max-width: 1360px;
   }
 `;
 

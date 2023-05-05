@@ -3,6 +3,7 @@ import { FooterList, FacebookIcon, TwitterIcon, LinkedinIcon, YoutubeIcon } from
 
 export const TeamBox = styled("div")`
   padding: 0 20px 48px;
+  text-align: center;
   color: var(--dark);
 `;
 
@@ -15,7 +16,19 @@ export const TeamList = styled("ul")`
     gap: 16px;
   }
 `;
+export const TeamItem = styled("li")`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 280px;
 
+  @media screen and (min-width: 768px) {
+    width: 223px;
+  }
+  @media screen and (min-width: 1360px) {
+    width: 420px;
+  }
+`;
 export const TeamCardImg = styled("img")`
   width: 280px;
   display: block;
@@ -98,11 +111,6 @@ export const CardTextWrapper = styled("div")`
 `;
 export const CardTitle = styled("h3")`
   margin-bottom: 8px;
-`;
-export const TeamItem = styled("li")`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 `;
 
 export const SocialList = styled(FooterList)`

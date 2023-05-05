@@ -29,7 +29,7 @@ export default function Gallery() {
             <picture key={idx}>
               <source srcSet={`${card._1x_webp} 1x, ${card._2x_webp} 2x`} type="image/webp" loading="lazy" />
               <source srcSet={`${card._1x} 1x, ${card._2x} 2x`} type="image/jpeg" loading="lazy" />
-              <CardImg src={card._1x} alt={card.alt} onClick={() => handleOpenClick(idx)} />
+              <CardImg src={card._1x} alt={card.alt} onClick={() => handleOpenClick(idx)} width="420" height="282" loading="lazy" />
             </picture>
           );
         })}
