@@ -1,6 +1,5 @@
 import { SectionArticle, SubTitle } from "../About/About.styled";
-import { BlogButton } from "./Blog.styled";
-import { BlogSection, BlogBox, BlogImgWrapper, BlogTitle } from "./Blog.styled";
+import { BlogSection, BlogBox, BlogImgWrapper, BlogTitle, BlogButton } from "./Blog.styled";
 
 export default function Blog() {
   return (

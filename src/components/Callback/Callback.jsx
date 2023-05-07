@@ -3,8 +3,18 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { ReactComponent as WarningIcon } from "../../assets/images/form/worning.svg";
 import { SectionTitle } from "../About/About.styled";
-import { CallbackSection, CallbackImgWrapper, CallbackButton, CallbackBox } from "./Callback.styled";
-import { FormWrapper, Form, Input, ErrorText, Label, Placeholder } from "./Callback.styled";
+import {
+  CallbackSection,
+  CallbackImgWrapper,
+  CallbackButton,
+  CallbackBox,
+  FormWrapper,
+  Form,
+  Input,
+  ErrorText,
+  Label,
+  Placeholder,
+} from "./Callback.styled";
 
 const schema = yup
   .object({

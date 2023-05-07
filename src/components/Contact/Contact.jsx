@@ -1,8 +1,21 @@
 import teamSrc from "./imageImportContact";
 import { SectionTitle, SectionArticle } from "../About/About.styled";
-import { TeamBox, TeamList, TeamCardImg, TeamItem, CardTextWrapper, CardTitle, CardImageOverlay, CardImageWrapper } from "./Contact.styled";
 import { FooterItem, FooterLink } from "../Footer/Footer.styled";
-import { FacebookIcon1, TwitterIcon1, LinkedinIcon1, YoutubeIcon1, SocialList } from "./Contact.styled";
+import {
+  TeamBox,
+  TeamList,
+  TeamCardImg,
+  TeamItem,
+  CardTextWrapper,
+  CardTitle,
+  CardImageOverlay,
+  CardImageWrapper,
+  FacebookIcon1,
+  TwitterIcon1,
+  LinkedinIcon1,
+  YoutubeIcon1,
+  SocialList,
+} from "./Contact.styled";
 
 export default function Contact() {
   return (

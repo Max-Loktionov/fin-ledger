@@ -1,6 +1,6 @@
+import Gallery from "../Gallery";
 import { CasesSection, CasesBox } from "./Cases.styled";
 import { SectionTitle } from "../About/About.styled";
-import Gallery from "../Gallery";
 
 export default function Cases() {
   return (
